@@ -30,7 +30,7 @@ jobs:
       - name: Create .env file from secret
         working-directory: ./src
         run: |
-          echo "$ENV_CONTENT" > .env
+          printf '%s' "$ENV_CONTENT" > .env
         env:
           ENV_CONTENT: ${{ secrets.ENV }}
 
@@ -56,6 +56,6 @@ jobs:
         working-directory: ./src
         run: |
           if [ -f .env ]; then
-            rm -f .env
-            echo ".env file removed successfully"
+            shred -f -u .env || rm -f .env
+            echo ".env file securely removed"
           fi
