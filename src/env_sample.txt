@@ -1,8 +1,8 @@
 OTEL_INSTRUMENTATION_GENAI_CAPTURE_MESSAGE_CONTENT="true"
 
 # Azure AI Foundry credentials
-AZURE_OPENAI_ENDPOINT=""
-AZURE_OPENAI_KEY=""
+AZURE_OPENAI_ENDPOINT="<your-endpoint>"
+AZURE_OPENAI_KEY="<your-key>"
 AZURE_OPENAI_API_VERSION="2024-12-01-preview"
 
 AZURE_AI_AGENT_ENDPOINT=""
@@ -39,7 +39,7 @@ DATABASE_NAME="zava"
 CONTAINER_NAME="product_catalog"
 
 # Application Insights credentials
-APPLICATIONINSIGHTS_CONNECTION_STRING=""
+APPLICATIONINSIGHTS_CONNECTION_STRING="InstrumentationKey=19e07187-0d4b-49de-b65a-a89c611a8434;IngestionEndpoint=https://swedencentral-0.in.applicationinsights.azure.com/;LiveEndpoint=https://swedencentral.livediagnostics.monitor.azure.com/;ApplicationId=c223c8f3-6b70-4a38-9d22-7aa5024cf068"
 
 # Agent IDs
 interior_designer=""
